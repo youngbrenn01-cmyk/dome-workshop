@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dome Workshop - Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-wrapper">
+      <div class="login-card">
+        <div class="logo-section">
+          <h1>Dome Workshop</h1>
+          <p class="tagline">Buy • Auction • Trade</p>
+        </div>
+
+        <div class="form-section">
+          <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('login')">Login</button>
+            <button class="tab-btn" onclick="switchTab('signup')">Create Account</button>
+          </div>
+
+          <!-- Login Form -->
+          <form id="loginForm" class="form-group active">
+            <div class="input-group">
+              <label for="loginEmail">Email</label>
+              <input type="email" id="loginEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+              <label for="loginPassword">Password</label>
+              <input type="password" id="loginPassword" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn-primary">Login</button>
+            <p class="forgot-link"><a href="#" onclick="showForgotPassword()">Forgot Password?</a></p>
+          </form>
+
+          <!-- Signup Form -->
+          <form id="signupForm" class="form-group">
+            <div class="input-group">
+              <label for="signupFullName">Full Name</label>
+              <input type="text" id="signupFullName" placeholder="Enter your full name" required>
+            </div>
+            <div class="input-group">
+              <label for="signupUsername">Username</label>
+              <input type="text" id="signupUsername" placeholder="Choose a username" required>
+            </div>
+            <div class="input-group">
+              <label for="signupEmail">Email</label>
+              <input type="email" id="signupEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+              <label for="signupPassword">Password</label>
+              <input type="password" id="signupPassword" placeholder="Create a password" required>
+            </div>
+            <button type="submit" class="btn-primary">Create Account</button>
+          </form>
+
+          <!-- Forgot Password Form -->
+          <form id="forgotPasswordForm" class="form-group">
+            <div class="input-group">
+              <label for="forgotEmail">Email</label>
+              <input type="email" id="forgotEmail" placeholder="Enter your registered email" required>
+            </div>
+            <button type="submit" class="btn-primary">Send Reset Link</button>
+            <p class="forgot-link"><a href="#" onclick="switchTab('login')">Back to Login</a></p>
+          </form>
+        </div>
+
+        <div class="message-section">
+          <div id="messageBox" class="message-box"></div>
+        </div>
+      </div>
+
+      <!-- Decorative Background -->
+      <div class="background-decoration">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>

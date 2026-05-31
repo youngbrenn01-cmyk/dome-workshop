@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Dome Workshop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="/marketplace">Dome Workshop</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/marketplace">Marketplace</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="about-container">
+    <section class="about-hero">
+      <h1>About Dome Workshop</h1>
+      <p class="tagline">Building a Community for Trading, Auctioning, and Selling</p>
+    </section>
+
+    <section class="about-section">
+      <h2>Our Mission</h2>
+      <p>Dome Workshop is dedicated to creating a seamless and trustworthy platform where users can buy, sell, auction, and trade items of all kinds. We believe in empowering communities through commerce and fostering connections between buyers and sellers worldwide.</p>
+    </section>
+
+    <section class="about-section">
+      <h2>What We Offer</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🛒</div>
+          <h3>Direct Purchase</h3>
+          <p>Buy items immediately at fixed prices from trusted sellers.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🏆</div>
+          <h3>Auction Platform</h3>
+          <p>Bid on unique items and win them at competitive prices.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3>Trade System</h3>
+          <p>Exchange items with other community members fairly.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Secure & Safe</h3>
+          <p>Verified users and secure transactions for peace of mind.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2>Why Choose Dome Workshop?</h2>
+      <ul class="benefits-list">
+        <li>✓ User-friendly interface for easy navigation</li>
+        <li>✓ Multiple transaction types: Buy, Auction, Trade</li>
+        <li>✓ Advanced search and filtering capabilities</li>
+        <li>✓ Real-time bidding and notifications</li>
+        <li>✓ Secure user accounts and data protection</li>
+        <li>✓ Community-driven platform with trusted reviews</li>
+      </ul>
+    </section>
+
+    <section class="about-section">
+      <h2>Our Team</h2>
+      <p>Dome Workshop is built by a passionate team of developers, designers, and entrepreneurs who are committed to making online trading accessible, safe, and enjoyable for everyone.</p>
+    </section>
+
+    <section class="about-section contact-section">
+      <h2>Get in Touch</h2>
+      <p>Have questions or suggestions? We'd love to hear from you!</p>
+      <div class="contact-info">
+        <p>📧 Email: <a href="mailto:info@domeworkshop.com">info@domeworkshop.com</a></p>
+        <p>🌐 Website: <a href="https://domeworkshop.com">www.domeworkshop.com</a></p>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 Dome Workshop. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function logout() {
+      localStorage.removeItem('token');
+      window.location.href = '/';
+    }
+  </script>
+</body>
+</html>
